@@ -2,18 +2,224 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Template</title>
-	<meta name="viewport" content="initial-scale=1">
-	<meta name="format-detection" content="telephone=no">
+	<title>Joxi</title>
+	<meta name="viewport" content="initial-scale=1"/>
 	<!-- <meta name="viewport" content="width=1200"> -->
-	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
-	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
+
 <body>
 <!-- BEGIN  out-->
 <div class="out">
+	<!-- BEGIN  header-->
+	<div class="header">
+		<div class="header__topline">
+			<div class="header__logo">
+				Joxi
+				<div class="header__version">бета</div>
+			</div>
+			<ul class="header__nav">
+				<li><a href="#" class="is-active">Обзор</a></li>
+				<li><a href="#">Скачать</a></li>
+				<li><a href="#">Блог</a></li>
+				<li><a href="#">Помощь</a></li>				
+			</ul>
+			<a href="#" class="header__login">Войти</a>
+		</div>		
+	</div>
+	<!-- END  header-->
+	
+	<!-- BEGIN  content-->
+	<div class="content">
+		<div class="content__title">
+			Размещение рекламы
+		</div>
+		<div class="content__info">
+			<!-- BEGIN block -->
+			<div class="block block-age">
+				<h3 class="block__header">
+					Возраст пользователей Joxi
+				</h3>
+				<div class="block__values">
+					<div class="value">
+						60%<br />
+						<span>25-34 года</span>
+					</div>
+				</div>
+				<div class="block__description">
+					Joxi — удобный современный сервис, который позволяет в два счета обмениваться файлами и скриншотами через Интернет и создания скриншотов онлайн прямо					
+				</div>				
+			</div>
+			<!-- END block -->
 
+			<!-- BEGIN block -->
+			<div class="block block-users">
+				<h3 class="block__header">
+					Пользователи по странам
+				</h3>
+				<div class="block__values">
+					<div class="value">
+						87%<br />
+						<span>Россия</span>
+					</div>
+					<div class="value is-right">
+						40%<br />
+						<span>ЦАО</span>
+					</div>
+				</div>
+				<div class="block__description">
+					Мы упростили работу с сервисом настолько, что для создания и мировой отправки скриншота требуются считанные секунды — всего лишь нажать кнопку
+				</div>				
+			</div>
+			<!-- END block -->
+
+			<!-- BEGIN block -->
+			<div class="block block-mission">
+				<h3 class="block__header">
+					С какой целью используют Joxi 
+				</h3>
+				<div class="block__values">
+					<div class="value">
+						80%<br />
+						<span>Для работы</span>
+					</div>
+				</div>
+				<div class="block__description">
+					Нам удалось упростить и ускорить процес создания скриншотов на 30% в сравнении даже с самыми шустрыми аналогичными сервисами супер услуг 
+				</div>				
+			</div>
+			<!-- END block -->
+		</div>
+		<!-- END content__info-->	
+
+		<div class="content__specifications">
+			Пожалуйста ознакомьтесь с <a href="#">техническими требованиями (pdf 2,0 mb)</a><br />по размещению рекламы на нашем есурсе
+		</div>
+
+		<div class="content__title">
+			Прайс-лист на размещение баннеров
+		</div>
+
+		<div class="content__price">
+			<table>
+				<tr class="pos">
+					<td class="pos__name">Верхний 728x90</td>
+					<td class="pos__cost">24 <span>(1000 показов)</span></td>
+					<td><a href="#">Заказать</a></td>
+				</tr>
+
+				<tr class="pos">
+					<td class="pos__name">Левый 240x400</td>
+					<td class="pos__cost">22 <span>(1000 показов)</span></td>
+					<td><a href="#">Заказать</a></td>
+				</tr>
+
+				<tr class="pos">
+					<td class="pos__name">Правый 240x400</td>
+					<td class="pos__cost">22 <span>(1000 показов)</span></td>
+					<td><a href="#">Заказать</a></td>
+				</tr>
+
+				<tr class="pos">
+					<td class="pos__name">Нижний 728x90</td>
+					<td class="pos__cost">17 <span>(1000 показов)</span></td>
+					<td><a href="#">Заказать</a></td>
+				</tr>
+			</table>
+		</div>		
+
+		<!-- BEGIN request-->
+		<div class="request">
+			<div class="request__inner">
+				<div class="content__title">
+					Подать заявку
+				</div>
+
+				<!-- BEGIN request__column-->
+				<div class="request__column">
+					<div class="request__field">				
+						<label>Название компании<span>*</span></label>
+						<div class="field__input">
+							<input type="text" name="" id="comp_name">
+						</div>
+					</div>
+					<div class="request__field">
+						<label>Сайт компании</label>
+						<div class="field__input">
+							<input type="text" name="" id="comp_site">
+						</div>
+					</div>
+					<div class="request__field">
+						<label>Ваше имя<span>*</span></label>
+						<div class="field__input">
+							<input type="text" name="" id="your_name">
+						</div>
+					</div>
+					<div class="request__field">
+						<label>E-mail<span>*</span></label>
+						<div class="field__input">
+							<input type="text" name="" id="email">
+						</div>
+					</div>
+				</div>
+				<!-- END request__column-->
+
+				<!-- BEGIN request__column-->
+				<div class="request__column">
+					<div class="request__field">				
+						<label>Телефон<span>*</span></label>
+						<div class="field__input">
+							<input type="text" name="" id="your_phone">
+						</div>
+					</div>
+					<div class="request__field">
+						<label>Комментарий к заказу</label>
+						<div class="field__input">
+							<textarea name="" id="comment" cols="30" rows="10"></textarea>
+						</div>
+					</div>
+				</div>
+				<!-- END request__column-->
+
+				<div class="request__submit">
+					<input type="submit" value="Отправить заказ">
+				</div>
+			</div>
+		</div>
+		<!-- END request -->
+
+		<div class="content__youpurpose">
+			Также вы можете самостоятельно разместить вашу рекламу у нас на ресурсе - <a href="#">тут</a>
+		</div>
+	</div>
+	<!-- END  content-->
+
+	<!-- BEGIN  footer-->
+	<div class="footer">
+		<div class="footer__inner">
+			<div class="footer__copy">
+				Все права принадлежат ООО "Джокси" (ОГРН 5137746069016)
+			</div>
+			<ul class="footer__nav">
+				<li><a href="#">О Joxi</a></li>
+				<li><a href="#">Условия использования</a></li>
+				<li><a href="#">Обратная связь</a></li>
+				<li><a href="#" class="bg-reklama">Реклама</a></li>				
+			</ul>
+			<div class="footer__social">
+				<a href="#" class="social_fb"></a>
+				<a href="#" class="social_vk"></a>
+				<a href="#" class="social_tw"></a>
+				<a href="#" class="social_ok"></a>
+			</div>
+			<div class="footer__lang">
+				<img src="img/icons/lang.jpg" alt="">
+				<a href="#"></a>
+			</div>
+		</div>		
+	</div>
+	<!-- END  footer-->
 </div>
 <!-- END out-->
 <!-- load scripts -->

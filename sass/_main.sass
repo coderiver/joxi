@@ -1,216 +1,320 @@
 // Normally mainpage styles
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$cHF: #24303e
+$cTheme: #6fbce1
+$cContentTitle: #515151
+$cWhite: #fff
+
+.in
+	width: 1180px
+	margin: 0 auto
+
+a
+	text-decoration: none
+	color: $cWhite
+
+.header
+	width: 100%
+	height: 88px
+	background: $cHF
+
+	.header__topline		
+		@extend .in
+		padding-top: 18px
+
+		.header__logo
+			font-size: 0px
+			+png(logo)
+			float: left
+
+			.header__version
+				font-size: 12px
+				font-style: italic
+				color: #a7abb1
+				margin-left: 124px
+				margin-top: 8px
+
+		.header__nav
+			font-size: 13px
+			margin-top: 30px
+			margin-left: 285px
+			float: left
+
+			li
+				display: inline-block
+				margin-right: 55px			
+
+		a 
+			+Helv			
+			text-transform: uppercase			
+
+		a:hover, .is-active
+			color: $cTheme
+
+		.header__login
+			float: right
+			margin-top: 30px
+
+.content
+	margin: 0 auto	
+	text-align: center
+
+	.content__title
+		+HelvUL
+		font-size: 42px
+		color: $cContentTitle
+		margin-top: 62px
+		margin-bottom: 67px
+
+	@each $s in age, users, mission
+		.block-#{$s}
+			background: url(../img/icons/#{$s}.png) no-repeat
+
+	.content__info
+		margin-bottom: 67px
+
+		.block
+			padding-top: 107px
+			width: 279px
+			display: inline-block
+			text-align: left
+			vertical-align: top
+			margin-right: 111px		
+
+			.block__header
+				font-size: 24px
+				font-family: Georgia, Arial, sans-serif 
+				font-style: italic
+				line-height: 26px
+				color: $cContentTitle
+				font-weight: 100
+
+			.block__values
+				margin-top: 30px
+
+				.value				
+					display: inline-block					
+					+HelvNB
+					font-size: 40px					
+					background: url(../img/icons/arrow.png) no-repeat left 3px
+					padding-left: 16px
+					color: $cTheme
+					line-height: 24px
+				
+					span
+						+HelvNB
+						font-size: 21px				
+						color: $cContentTitle
+
+				.is-right
+					margin-left: 60px
+
+			.block__description
+				+Helvetica
+				font-size: 15px
+				color: #8c8c8c
+				margin-top: 20px
+
+	.content__specifications		
+		margin-bottom: 67px
+		font-family: Georgia, Arial, sans-serif 
+		font-style: italic
+		font-size: 24px
+		color: $cContentTitle
+		line-height: 26px
+		background: #f9f9f9
+		padding: 65px 0px
+
+		a
+			color: $cTheme
+
+		a:hover
+			text-decoration: underline
+
+	.content__price
+		@extend .in
+		margin-bottom: 80px		
+	
+		.pos		
+			text-align: left
+			height: 70px
+			border-top: 1px solid #f4f4f4
+			border-bottom: 1px solid #f4f4f4
+
+			td
+				vertical-align: middle
+			
+			.pos__name		
+				+HelveticaB
+				font-size: 16px
+				font-weight: bold
+				color: $cContentTitle
+				width: 41%			
+
+			.pos__cost			
+				+HelvNB
+				color: $cTheme			
+				font-size: 30px
+				width: 48%
+			
+				span				
+					font-size: 20px
+					background: url(../img/icons/rub.png) no-repeat left 3px
+					padding-left: 21px				
+					margin-left: 5px
+					position: relative
+					top: -2px
+			a			
+				+Helv
+				padding: 10px 15px
+				background: $cTheme
+				text-transform: uppercase
+				color: $cWhite
+				text-align: right
+				font-size: 16px
+
+			a:hover
+				background: #2da7e1
+
+	.request
+		text-align: left
+		background: #f9f9f9
+
+		.request__inner
+			@extend .in
+			padding-bottom: 50px
+
+		.content__title
+			text-align: center
+			padding-top: 63px
+
+		.request__column
+			display: inline-block
+			vertical-align: top
+			margin-right: 56px
+			color: $cContentTitle								
+
+			.request__field
+				margin-bottom: 18px
+
+				span
+					color: $cTheme
+					font-weight: bold
+		
+				input, textarea
+					border: 1px solid #e2e2e2
+					width: 507px
+					margin-top: 11px
+					padding: 0 10px					
+					font-family: Georgia, Arial, sans-serif 					
+					font-size: 16px					
+
+				input										
+					height: 33px
+
+				textarea
+					height: 201px
+					padding-top: 7px					
+
+				label
+					font-family: Georgia, Arial, sans-serif 
+					font-style: italic
+					font-size: 16px					
+
+		.request__submit
+			text-align: center
+			margin-top: 35px
+
+			input
+				padding: 17px 21px
+				background: $cTheme
+				+Helv
+				text-transform: uppercase
+				font-size: 20px
+				color: $cWhite
+
+			input:hover
+				background: #2da7e1
+
+	.content__youpurpose
+		font-family: Georgia, Arial, sans-serif 
+		font-size: 18px
+		font-style: italic
+		color: $cContentTitle
+		margin-top: 40px
+		margin-bottom: 40px
+
+		a
+			color: $cTheme
+
+		a:hover
+			text-decoration: underline
+
+.footer
+	height: 43px
+	background: $cHF
+
+	.footer__inner
+		@extend .in
+
+		.footer__copy
+			color: $cWhite
+			font-size: 12px
+			line-height: 43px
+			float: left
+
+		.footer__nav
+			font-size: 12px
+			line-height: 43px
+			float: left
+			margin-left: 108px
+
+			a
+				color: $cWhite
+
+			.bg-reklama
+				color: #a2acb0
+
+			a:hover
+				text-decoration: underline
+
+			li
+				display: inline-block
+				margin-right: 23px
+
+		.footer__social
+			float: left
+			margin-top: 13px
+			margin-left: 50px
+
+			a
+				display: inline-block
+				margin-left: 20px
+
+			.social_fb
+				+s(social_fb)
+
+			.social_vk
+				+s(social_vk)
+				position: relative
+				top: -1px		
+
+			.social_tw
+				+s(social_tw)
+				position: relative
+				top: -2px		
+
+			.social_ok
+				+s(social_ok)
+
+		.footer__lang
+			padding-top: 14px
+			float: right
+
+			img
+				float: left
+
+			a
+				display: block
+				+s(arrow_lang)
+				margin-left: 30px
+				margin-top: 5px
